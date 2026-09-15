@@ -8,9 +8,6 @@
 ![API](https://img.shields.io/badge/RestCountries-API-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-### 🔗 Live Demo
-> Add your GitHub Pages / Vercel link here after deploy
-
 ### ✨ Features
 
 - **Smart Search** – Case-insensitive search, works for `japan`, `JAPAN`, `Japan`
