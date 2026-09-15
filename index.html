@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountryInfo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="logo">
+                <div class="logo-icon">🌐</div>
+                <span>CountryInfo</span>
+            </div>
+            <div class="nav">
+                <span id="navExplore" class="active" onclick="showExplore()">Explore</span>
+                <span id="navFav" onclick="showFavorites()">♡ Favorites (<b id="favCount">0</b>)</span>
+                <span onclick="openSettings()">⚙ Settings</span>
+            </div>
+        </div>
+
+        <div class="search-wrap">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for a country...">
+            </div>
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+
+        <div class="card-wrap" id="resultArea"></div>
+
+        <div class="footer">Data sourced • Updated Oct 2024 • <span id="time"></span></div>
+    </div>
+
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <h3>Settings</h3>
+            <div class="setting-row">
+                <span>Dark Mode</span>
+                <label class="switch"><input type="checkbox" id="darkModeToggle" checked><span
+                        class="slider"></span></label>
+            </div>
+            <div class="setting-row">
+                <span>Auto Search</span>
+                <label class="switch"><input type="checkbox" id="autoSearchToggle" checked><span
+                        class="slider"></span></label>
+            </div>
+            <button class="btn btn-primary" onclick="closeSettings()" style="margin-top:10px">Close</button>
+        </div>
+    </div>
+
+    <div id="detailModal" class="modal">
+        <div class="modal-content detail-modal" id="detailContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
