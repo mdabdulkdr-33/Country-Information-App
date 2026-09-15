@@ -29,7 +29,7 @@
 - **Fonts:** Inter
 
 ### 📂 Project Structure
-├── index.html
-├── style.css
-├── script.js 
-└── README.md
+├── index.html          
+├── style.css        
+├── script.js        
+└── README.md        
